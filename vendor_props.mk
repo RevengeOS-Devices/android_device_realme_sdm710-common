@@ -149,43 +149,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.callstack=1 \
     debug.mdpcomp.logs=0 \
-    debug.sf.hw=0 \
-    debug.sf.latch_unsignaled=0 \
-    debug.sf.disable_backpressure=1 \
-    debug.sf.enable_gl_backpressure=1 \
-    debug.sf.early_phase_offset_ns=1500000 \
-    debug.sf.early_app_phase_offset_ns=1500000 \
-    debug.sf.early_gl_phase_offset_ns=3000000 \
-    debug.sf.early_gl_app_phase_offset_ns=15000000 \
-    debug.cpurend.vsync=false \
-    persist.sys.sf.color_saturation=1.0 \
-    persist.hwc.enable_vds=1 \
-    ro.opengles.version=196610 \
-    ro.qualcomm.cabl=0 \
-    vendor.display.disable_skip_validate=1 \
-    vendor.gralloc.enable_fb_ubwc=1 \
-    vendor.video.disable.ubwc=1 \
-    vendor.display.enable_default_color_mode=0 \
-    video.disable.ubwc=1
-    vendor.gralloc.disable_ubwc=0
-
-# Rendering
-PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
-    debug.enable.sglscale=1 \
-    debug.sf.disable_hwc=0 \
-    debug.sf.gpu_comp_tiling=1 \
-    debug.sf.recomputecrop=0 \
-    persist.hwc.ptor.enable=true
-
-# FIFO scheduling for UI
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.use_fifo_ui=1
-
-# Fling
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.min.fling_velocity=160 \
-    ro.max.fling_velocity=20000
+    debug.sf.hw=0 \
+    debug.sf.latch_unsignaled=1 \
+    debug.sf.disable_backpressure=1 \
+    persist.sys.sf.color_saturation=1.0 \
+    ro.opengles.version=196610 \
+    vendor.gralloc.disable_ubwc=0
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
